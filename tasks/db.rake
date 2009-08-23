@@ -11,7 +11,7 @@ namespace :db do
     Rake::Task["db:drop"].invoke
     Rake::Task["db:create"].invoke
     Rake::Task["db:migrate"].invoke
-    Rake::Task["db:test:clone"].invoke
+    Rake::Task["db:test:clone"].invoke if RAILS_ENV == "development"
   end
 
   desc 'Recreate empty database and populate with seed data'
