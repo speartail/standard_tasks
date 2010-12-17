@@ -3,4 +3,9 @@ namespace :clean do
   task :generated => :clean do
     Dir.glob("public/**/all.{js,css}") { |f| safe_unlink f }
   end
+
+  desc 'Remove all editor backup files'
+  task :backup => :clean do
+    system "find . -name '*~' -delete"
+  end
 end
