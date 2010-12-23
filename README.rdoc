@@ -1,4 +1,4 @@
-= standard_tasks =
+= standard_tasks
 
 This project is simply a set of standard tasks used in all our projects for various purposes.
 
