@@ -2,7 +2,7 @@ module Northwind
   if defined?(Rails)
     class StandardTasks < Rails::Railtie
       rake_tasks do
-	Dir.glob('tasks/*.rake').each { |r| load r }
+	Dir.glob('standard_tasks/tasks/*.rake').each { |r| load r }
       end
 #    initializer "newplugin.initialize" do |app|
       # subscribe to all rails notifications: controllers, AR, etc.
