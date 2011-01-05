@@ -48,4 +48,4 @@ Rake::RDocTask.new do |rdoc|
 end
 
 # make the tasks implemented in this gem available to itself
-Dir.glob('lib/tasks/*.rake').each { |r| import r }
+import 'lib/standard_tasks/tasks.rb'

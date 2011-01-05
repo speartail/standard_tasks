@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{standard_tasks}
-  s.version = "0.0.9"
+  s.version = "0.0.10.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Peter Hoeg"]
@@ -26,13 +26,6 @@ Gem::Specification.new do |s|
     "VERSION.yml",
     "lib/standard_tasks.rb",
     "lib/standard_tasks/railtie.rb",
-    "lib/tasks/clean.rake",
-    "lib/tasks/db.rake",
-    "lib/tasks/doc.rake",
-    "lib/tasks/log.rake",
-    "lib/tasks/modules.rake",
-    "lib/tasks/package.rake",
-    "lib/tasks/src.rake",
     "spec/spec_helper.rb",
     "spec/standard_tasks_spec.rb",
     "standard_tasks.gemspec"

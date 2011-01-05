@@ -4,9 +4,7 @@ require 'rails'
 module StandardTasks
   class Railtie < Rails::Railtie
     rake_tasks do
-      Dir.glob('../tasks/*.rake').each { |r| 
-        puts "peter: #{r}"
-        load r }
+      load 'standard_tasks/tasks.rb'
     end
   end
 end
