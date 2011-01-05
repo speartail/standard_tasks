@@ -1,5 +1,4 @@
 namespace :doc do
-
   namespace :diagram do
 
     format = 'svg'

@@ -8,7 +8,7 @@ module Northwind
 #      ActiveSupport::Notifications.subscribe do |*args|
 #        event = ActiveSupport::Notifications::Event.new(*args)
 #        puts "Got notification: #{event.inspect}"
-      end
-    end
+#      end
+#    end
   end
 end

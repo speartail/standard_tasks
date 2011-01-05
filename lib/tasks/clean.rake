@@ -7,9 +7,9 @@ namespace :clean do
 
   desc 'Remove all editor backup files'
   task :backup do
-    system "find . -name '*~' -delete"
+    Dir.glob("**/*~") { |f| safe_unlink f }
+    # system "find . -name '*~' -delete"
   end
 
   task :all => [ :generated, :backup ]
-
 end
