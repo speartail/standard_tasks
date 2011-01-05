@@ -1,7 +1,7 @@
 module Northwind
   class StandardTasks < Rails::Railtie
     rake_tasks do
-      load "tasks/*.rake"
+      load "../tasks/*.rake"
     end
 #    initializer "newplugin.initialize" do |app|
       # subscribe to all rails notifications: controllers, AR, etc.
