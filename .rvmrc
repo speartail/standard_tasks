@@ -1,0 +1,1 @@
+rvm --create use 1.9.2@standard_tasks > /dev/null
